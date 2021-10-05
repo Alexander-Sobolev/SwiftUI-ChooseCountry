@@ -38,7 +38,7 @@ struct ContentView: View {
                             .renderingMode(.original)
                             .frame(width: 250, height: 130)
                             .clipShape(Capsule())
-                            .overlay(Capsule().stroke(Color.gray, lineWidth: 5))
+                            .overlay(Capsule().stroke(Color.gray, lineWidth: 3))
                             .shadow(color: .orange, radius: 22)
                     }
                 }

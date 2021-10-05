@@ -42,7 +42,7 @@ struct ContentView: View {
                             .shadow(color: .orange, radius: 22)
                     }
                 }
-                Text("Общий счет: \(score)")
+                Text("Общий счет: \(score)") 
                     .font(.largeTitle)
                     .fontWeight(.black)
             }

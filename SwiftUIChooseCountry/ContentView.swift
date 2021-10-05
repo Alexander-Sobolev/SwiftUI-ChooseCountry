@@ -28,6 +28,7 @@ struct ContentView: View {
                     Text("Выбери флаг: ")
                         .foregroundColor(.white)
                         .font(.headline)
+                    
                     Text(countries[correctAnswer])
                         .foregroundColor(.white)
                         .font(.largeTitle)

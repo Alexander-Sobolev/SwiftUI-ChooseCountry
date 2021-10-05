@@ -36,7 +36,7 @@ struct ContentView: View {
                     }) {
                         Image(self.countries[number])
                             .renderingMode(.original)
-                            .frame(width: 250, height: 130)
+                            .frame(width: 250, height: 150)
                             .clipShape(Capsule())
                             .overlay(Capsule().stroke(Color.gray, lineWidth: 3))
                             .shadow(color: .orange, radius: 22)
@@ -58,10 +58,10 @@ struct ContentView: View {
     
     func flagTapped(_ number: Int) {
         if number == correctAnswer {
-            scoreTitle == "Правильный ответ!"
+            scoreTitle = "Правильный ответ!"
             score += 1
         } else {
-            scoreTitle == "Неправильно! Это флаг \(countries[number])"
+            scoreTitle = "Неправильно! Это флаг \(countries[number])"
             score -= 1
         }
     }

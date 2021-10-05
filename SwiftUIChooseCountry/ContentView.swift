@@ -17,6 +17,7 @@ struct ContentView: View {
     @State private var scoreTitle = ""
     
     var body: some View {
+        
         ZStack {
             LinearGradient(gradient: Gradient(colors: [.black, .white]), startPoint: .top, endPoint: .bottom).edgesIgnoringSafeArea(.all)
             VStack (spacing: 20){
@@ -42,7 +43,8 @@ struct ContentView: View {
                             .shadow(color: .orange, radius: 22)
                     }
                 }
-                Text("Общий счет: \(score)") 
+                
+                Text("Общий счет: \(score)")
                     .font(.largeTitle)
                     .fontWeight(.black)
             }

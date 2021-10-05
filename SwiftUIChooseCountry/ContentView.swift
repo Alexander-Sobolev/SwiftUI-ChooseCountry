@@ -20,8 +20,11 @@ struct ContentView: View {
         
         ZStack {
             LinearGradient(gradient: Gradient(colors: [.black, .white]), startPoint: .top, endPoint: .bottom).edgesIgnoringSafeArea(.all)
+            
             VStack (spacing: 20){
+                
                 VStack {
+                    
                     Text("Выбери флаг: ")
                         .foregroundColor(.white)
                         .font(.headline)

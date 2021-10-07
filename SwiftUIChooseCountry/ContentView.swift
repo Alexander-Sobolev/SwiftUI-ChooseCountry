@@ -35,7 +35,7 @@ struct ContentView: View {
                         .fontWeight(.black)
                 }
                 ForEach(0..<3) { number in
-                                       
+                                        
                     Button(action: {
                         self.flagTapped(number)
                         self.showingScore = true

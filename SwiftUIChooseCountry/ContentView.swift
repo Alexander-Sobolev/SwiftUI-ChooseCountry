@@ -51,7 +51,7 @@ struct ContentView: View {
                         
                 Text("Общий счет: \(score)")
                     .font(.largeTitle)
-                    .fontWeight(.black)
+                    .fontWeight(.black) 
             }
         }.alert(isPresented: $showingScore, content: {
             Alert(title: Text(scoreTitle), message: Text("Общий счет: \(score)"), dismissButton: .default(Text("Продолжить")) {self.askQuestion()} )

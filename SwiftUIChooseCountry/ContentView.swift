@@ -55,7 +55,7 @@ struct ContentView: View {
             }
         }.alert(isPresented: $showingScore, content: {
             Alert(title: Text(scoreTitle), message: Text("Общий счет: \(score)"), dismissButton: .default(Text("Продолжить")) {self.askQuestion()} )
-        })                  
+        })                   
     }
     
     func askQuestion() {
